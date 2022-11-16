@@ -8,72 +8,72 @@
 </head>
 <body>
 
-    <header>
-        <div class="skilled">skilled</div>
+    <header class="container__header"> <!-- header vai fazer o papel de div nesse caso -->
+        <p class="skilled">skilled</p> <!-- div é mais usada para abraçar outros elementos -->
         <button class="btn-header">Get Started</button>
     </header>
 
-    <div class="woman">
-        <img src="assets/img/image-hero-desktop.png" alt="">
-    </div>
-    <div class="maximize">
-       <h1 class="title">Maximize skill, minimize budget</h1>
-       <p class="quote">Our modern courses across a range of in-demand skills 
-        will give you the knowledge you need to live the life you want.</p>
-        <button class="btn">Get Started</button>
-    </div>
-    <div class="container">
-        <div class="first">
-            <h2>Check out our most popular courses!</h2>
-        </div>
-        <div class="animation">
-            <img src="assets/img/icon-animation.svg" alt="">
-            <h3 class="title">Animation</h3>
-            <p class="quote">Learn the latest animation techniques 
-                to create stunning motion design and captivate your audience.</p>
-            <p class="getStarted">Get Started</p>    
+    <main class="container__main"> <!-- main vai fazer o papel de div nesse caso -->
 
+        <div class="container__maximize"> <!-- essa div (poderia ser uma section tbm) vai ser pra manusear com flex as duas divs maximize e woman -->
+            <div class="maximize">
+                <h1 class="title">Maximize skill, minimize budget</h1>
+                <p class="quote">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <div class="woman"> <!-- me pareceu que a imagem fica disposta depois do maximize -->
+                <img src="assets/img/image-hero-desktop.png" alt="">
+            </div>
         </div>
-        <div class="design">
-            <img src="assets/img/icon-design.svg" alt="">
-            <h3 class="title">Design</h3>
-            <p class="quote">Create beautiful, usable interfaces to help s
-                hape the future of how the web looks.</p>
+
+        <div class="container__cards">
+            <div class="card-first">
+                <h2>Check out our most popular courses!</h2>
+            </div>
+
+            <div class="card card-animation"> <!-- acho que vc pode trabalhar na classe card pq sao todos iguais, e se precisar de algo especifico, aí voce usa a segunda classe -->
+                <img src="assets/img/icon-animation.svg" alt="">
+                <h3 class="title">Animation</h3>
+                <p class="quote">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
                 <p class="getStarted">Get Started</p>    
-        </div>
+            </div>
 
-        <div class="photography">
-            <img src="assets/img/icon-photography.svg" alt="">
-            <h3 class="title">Design</h3>
-            <p class="quote">Explore critical fundamentals like lighting, composition,
-                 and focus to capture exceptional photos.</p>
+            <div class="card card-design">
+                <img src="assets/img/icon-design.svg" alt="">
+                <h3 class="title">Design</h3>
+                <p class="quote">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
                 <p class="getStarted">Get Started</p>    
-        </div>
+            </div>
 
-        <div class="crypto">
-            <img src="assets/img/icon-crypto.svg" alt="">
-            <h3 class="title">Crypto</h3>
-            <p class="quote">All you need to know to get started investing in crypto. 
-                Go from beginner to advanced with this 54 hour course.</p>
+            <div class="card card-photography">
+                <img src="assets/img/icon-photography.svg" alt="">
+                <h3 class="title">Design</h3>
+                <p class="quote">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
                 <p class="getStarted">Get Started</p>    
-        </div>
+            </div>
 
-        <div class="business">
-            <img src="assets/img/icon-business.svg" alt="">
-            <h3 class="title">Crypto</h3>
-            <p class="quote">A step-by-step playbook to help you start, scale,
-                 and sustain your business without outside investment.</p>
+            <div class="card card-crypto">
+                <img src="assets/img/icon-crypto.svg" alt="">
+                <h3 class="title">Crypto</h3>
+                <p class="quote">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
                 <p class="getStarted">Get Started</p>    
+            </div>
 
+            <div class="card card-business">
+                <img src="assets/img/icon-business.svg" alt="">
+                <h3 class="title">Crypto</h3>
+                <p class="quote">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                <p class="getStarted">Get Started</p>    
+            </div>
         </div>
-    </div>
+
+    </main>
 
     <footer>
-        <div class="skilled">Skilled</div>
+        <p class="skilled">Skilled</p>
         <button class="btn-footer">Get Started</button>
     </footer>
 
-
-    
 </body>
 </html>
